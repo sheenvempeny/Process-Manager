@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="process_manager_helper">
+            <connections>
+                <outlet property="_window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="btnAll" destination="hmJ-Th-Hm3" id="7fq-9E-xkg"/>
+                <outlet property="btnMyOwn" destination="zwX-dO-chH" id="UbN-5Y-gEy"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="≪ do not localize ≫" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" deferred="NO" oneShot="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="F0z-JX-Cv5" userLabel="PrefPane">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+            <rect key="contentRect" x="176" y="715" width="198" height="132"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="198" height="132"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <box autoresizesSubviews="NO" borderType="line" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="9XJ-WM-AUJ">
+                        <rect key="frame" x="2" y="2" width="196" height="128"/>
+                        <view key="contentView" id="6W5-c6-wLh">
+                            <rect key="frame" x="1" y="1" width="194" height="126"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <button fixedFrame="YES" tag="1" translatesAutoresizingMaskIntoConstraints="NO" id="zwX-dO-chH">
+                                    <rect key="frame" x="19" y="19" width="161" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="My own" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="VXn-Qj-cLw">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="selChanged:" target="-2" id="a4X-xp-2S7"/>
+                                    </connections>
+                                </button>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lNo-dJ-w9f">
+                                    <rect key="frame" x="20" y="89" width="160" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Show process" id="z9y-Vx-RtL">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hmJ-Th-Hm3">
+                                    <rect key="frame" x="19" y="54" width="161" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="radio" title="All process" bezelStyle="regularSquare" imagePosition="left" alignment="left" inset="2" id="bdR-H3-O6T">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                    <connections>
+                                        <action selector="selChanged:" target="-2" id="jgt-VS-Feu"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </view>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="122" id="ALn-iv-dVb"/>
+                            <constraint firstAttribute="width" constant="190" id="KOL-IO-gok"/>
+                        </constraints>
+                    </box>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="9XJ-WM-AUJ" secondAttribute="bottom" constant="6" id="5xI-62-vVf"/>
+                    <constraint firstAttribute="trailing" secondItem="9XJ-WM-AUJ" secondAttribute="trailing" constant="3" id="ctl-zW-K1q"/>
+                    <constraint firstItem="9XJ-WM-AUJ" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="5" id="hVO-Uw-KaG"/>
+                    <constraint firstItem="9XJ-WM-AUJ" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="4" id="m1c-Vy-Twf"/>
+                </constraints>
+            </view>
+            <point key="canvasLocation" x="56" y="30"/>
+        </window>
+    </objects>
+</document>

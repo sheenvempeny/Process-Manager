@@ -1,0 +1,691 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30B2BC381E62C9EA00CCDA77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC371E62C9EA00CCDA77 /* AppDelegate.m */; };
+		30B2BC3B1E62C9EA00CCDA77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC3A1E62C9EA00CCDA77 /* main.m */; };
+		30B2BC3E1E62C9EA00CCDA77 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC3D1E62C9EA00CCDA77 /* ViewController.m */; };
+		30B2BC401E62C9EA00CCDA77 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B2BC3F1E62C9EA00CCDA77 /* Assets.xcassets */; };
+		30B2BC431E62C9EA00CCDA77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B2BC411E62C9EA00CCDA77 /* Main.storyboard */; };
+		30B2BC4E1E62C9EA00CCDA77 /* process_managerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC4D1E62C9EA00CCDA77 /* process_managerTests.m */; };
+		30B2BC5A1E62CCE000CCDA77 /* ProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC591E62CCE000CCDA77 /* ProcessManager.m */; };
+		30B2BC601E63631100CCDA77 /* NSRunningApplication+Adds.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC5F1E63631100CCDA77 /* NSRunningApplication+Adds.m */; };
+		30B2BC631E63A43600CCDA77 /* ProcessInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC621E63A43600CCDA77 /* ProcessInfo.m */; };
+		30B2BC691E63C03800CCDA77 /* ProcessListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30B2BC681E63C03800CCDA77 /* ProcessListViewController.m */; };
+		30CBDD011E650F3300C55118 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBDD001E650F3300C55118 /* main.m */; };
+		30CBDD0B1E65109200C55118 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CBDD0A1E65109200C55118 /* Cocoa.framework */; };
+		30CBDD0C1E65109900C55118 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30CBDCF71E64C63A00C55118 /* Security.framework */; };
+		30CBDD0F1E65124E00C55118 /* KillApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBDD0E1E65124E00C55118 /* KillApp.m */; };
+		30CBDD111E6512E800C55118 /* ProcDeleteHelper in Resources */ = {isa = PBXBuildFile; fileRef = 30CBDCFE1E650F3300C55118 /* ProcDeleteHelper */; };
+		30CBDD1C1E65175300C55118 /* process_manager_helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 30CBDD1B1E65175300C55118 /* process_manager_helper.h */; };
+		30CBDD1E1E65175400C55118 /* process_manager_helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CBDD1D1E65175400C55118 /* process_manager_helper.m */; };
+		30CBDD201E65175400C55118 /* process_manager_helper.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 30CBDD1F1E65175400C55118 /* process_manager_helper.tiff */; };
+		30CBDD231E65175400C55118 /* process_manager_helper.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30CBDD211E65175400C55118 /* process_manager_helper.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30B2BC4A1E62C9EA00CCDA77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B2BC2B1E62C9EA00CCDA77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B2BC321E62C9EA00CCDA77;
+			remoteInfo = "process manager";
+		};
+		30CBDD121E65138600C55118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B2BC2B1E62C9EA00CCDA77 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30CBDCFD1E650F3300C55118;
+			remoteInfo = ProcDeleteHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		30CBDCFC1E650F3300C55118 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		30B2BC331E62C9EA00CCDA77 /* process manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "process manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B2BC361E62C9EA00CCDA77 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30B2BC371E62C9EA00CCDA77 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30B2BC3A1E62C9EA00CCDA77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30B2BC3C1E62C9EA00CCDA77 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		30B2BC3D1E62C9EA00CCDA77 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		30B2BC3F1E62C9EA00CCDA77 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30B2BC421E62C9EA00CCDA77 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30B2BC441E62C9EA00CCDA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B2BC491E62C9EA00CCDA77 /* process managerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "process managerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B2BC4D1E62C9EA00CCDA77 /* process_managerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = process_managerTests.m; sourceTree = "<group>"; };
+		30B2BC4F1E62C9EA00CCDA77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B2BC581E62CCE000CCDA77 /* ProcessManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessManager.h; sourceTree = "<group>"; };
+		30B2BC591E62CCE000CCDA77 /* ProcessManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessManager.m; sourceTree = "<group>"; };
+		30B2BC5E1E63631100CCDA77 /* NSRunningApplication+Adds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSRunningApplication+Adds.h"; sourceTree = "<group>"; };
+		30B2BC5F1E63631100CCDA77 /* NSRunningApplication+Adds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSRunningApplication+Adds.m"; sourceTree = "<group>"; };
+		30B2BC611E63A43600CCDA77 /* ProcessInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessInfo.h; sourceTree = "<group>"; };
+		30B2BC621E63A43600CCDA77 /* ProcessInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessInfo.m; sourceTree = "<group>"; };
+		30B2BC671E63C03800CCDA77 /* ProcessListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessListViewController.h; sourceTree = "<group>"; };
+		30B2BC681E63C03800CCDA77 /* ProcessListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessListViewController.m; sourceTree = "<group>"; };
+		30CBDCF71E64C63A00C55118 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		30CBDCFE1E650F3300C55118 /* ProcDeleteHelper */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProcDeleteHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CBDD001E650F3300C55118 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30CBDD0A1E65109200C55118 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		30CBDD0D1E65124E00C55118 /* KillApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KillApp.h; sourceTree = "<group>"; };
+		30CBDD0E1E65124E00C55118 /* KillApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KillApp.m; sourceTree = "<group>"; };
+		30CBDD191E65175300C55118 /* process manager helper.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "process manager helper.prefPane"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30CBDD1B1E65175300C55118 /* process_manager_helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = process_manager_helper.h; sourceTree = "<group>"; };
+		30CBDD1D1E65175400C55118 /* process_manager_helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = process_manager_helper.m; sourceTree = "<group>"; };
+		30CBDD1F1E65175400C55118 /* process_manager_helper.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = process_manager_helper.tiff; sourceTree = "<group>"; };
+		30CBDD221E65175400C55118 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/process_manager_helper.xib; sourceTree = "<group>"; };
+		30CBDD241E65175400C55118 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30B2BC301E62C9EA00CCDA77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B2BC461E62C9EA00CCDA77 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CBDCFB1E650F3300C55118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD0C1E65109900C55118 /* Security.framework in Frameworks */,
+				30CBDD0B1E65109200C55118 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CBDD151E65175300C55118 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B2BC2A1E62C9EA00CCDA77 = {
+			isa = PBXGroup;
+			children = (
+				30B2BC351E62C9EA00CCDA77 /* process manager */,
+				30B2BC4C1E62C9EA00CCDA77 /* process managerTests */,
+				30CBDCFF1E650F3300C55118 /* ProcDeleteHelper */,
+				30CBDD1A1E65175300C55118 /* process manager helper */,
+				30B2BC341E62C9EA00CCDA77 /* Products */,
+				30B2BC641E63B7FA00CCDA77 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30B2BC341E62C9EA00CCDA77 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30B2BC331E62C9EA00CCDA77 /* process manager.app */,
+				30B2BC491E62C9EA00CCDA77 /* process managerTests.xctest */,
+				30CBDCFE1E650F3300C55118 /* ProcDeleteHelper */,
+				30CBDD191E65175300C55118 /* process manager helper.prefPane */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30B2BC351E62C9EA00CCDA77 /* process manager */ = {
+			isa = PBXGroup;
+			children = (
+				30B2BC581E62CCE000CCDA77 /* ProcessManager.h */,
+				30B2BC591E62CCE000CCDA77 /* ProcessManager.m */,
+				30B2BC5E1E63631100CCDA77 /* NSRunningApplication+Adds.h */,
+				30B2BC5F1E63631100CCDA77 /* NSRunningApplication+Adds.m */,
+				30CBDD0D1E65124E00C55118 /* KillApp.h */,
+				30CBDD0E1E65124E00C55118 /* KillApp.m */,
+				30B2BC611E63A43600CCDA77 /* ProcessInfo.h */,
+				30B2BC621E63A43600CCDA77 /* ProcessInfo.m */,
+				30B2BC361E62C9EA00CCDA77 /* AppDelegate.h */,
+				30B2BC371E62C9EA00CCDA77 /* AppDelegate.m */,
+				30B2BC3C1E62C9EA00CCDA77 /* ViewController.h */,
+				30B2BC3D1E62C9EA00CCDA77 /* ViewController.m */,
+				30B2BC671E63C03800CCDA77 /* ProcessListViewController.h */,
+				30B2BC681E63C03800CCDA77 /* ProcessListViewController.m */,
+				30B2BC3F1E62C9EA00CCDA77 /* Assets.xcassets */,
+				30B2BC411E62C9EA00CCDA77 /* Main.storyboard */,
+				30B2BC441E62C9EA00CCDA77 /* Info.plist */,
+				30B2BC391E62C9EA00CCDA77 /* Supporting Files */,
+			);
+			path = "process manager";
+			sourceTree = "<group>";
+		};
+		30B2BC391E62C9EA00CCDA77 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30B2BC3A1E62C9EA00CCDA77 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30B2BC4C1E62C9EA00CCDA77 /* process managerTests */ = {
+			isa = PBXGroup;
+			children = (
+				30B2BC4D1E62C9EA00CCDA77 /* process_managerTests.m */,
+				30B2BC4F1E62C9EA00CCDA77 /* Info.plist */,
+			);
+			path = "process managerTests";
+			sourceTree = "<group>";
+		};
+		30B2BC641E63B7FA00CCDA77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30CBDD0A1E65109200C55118 /* Cocoa.framework */,
+				30CBDCF71E64C63A00C55118 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30CBDCFF1E650F3300C55118 /* ProcDeleteHelper */ = {
+			isa = PBXGroup;
+			children = (
+				30CBDD001E650F3300C55118 /* main.m */,
+			);
+			path = ProcDeleteHelper;
+			sourceTree = "<group>";
+		};
+		30CBDD1A1E65175300C55118 /* process manager helper */ = {
+			isa = PBXGroup;
+			children = (
+				30CBDD1B1E65175300C55118 /* process_manager_helper.h */,
+				30CBDD1D1E65175400C55118 /* process_manager_helper.m */,
+				30CBDD1F1E65175400C55118 /* process_manager_helper.tiff */,
+				30CBDD211E65175400C55118 /* process_manager_helper.xib */,
+				30CBDD241E65175400C55118 /* Info.plist */,
+			);
+			path = "process manager helper";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		30CBDD161E65175300C55118 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD1C1E65175300C55118 /* process_manager_helper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		30B2BC321E62C9EA00CCDA77 /* process manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B2BC521E62C9EA00CCDA77 /* Build configuration list for PBXNativeTarget "process manager" */;
+			buildPhases = (
+				30B2BC2F1E62C9EA00CCDA77 /* Sources */,
+				30B2BC301E62C9EA00CCDA77 /* Frameworks */,
+				30B2BC311E62C9EA00CCDA77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30CBDD131E65138600C55118 /* PBXTargetDependency */,
+			);
+			name = "process manager";
+			productName = "process manager";
+			productReference = 30B2BC331E62C9EA00CCDA77 /* process manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30B2BC481E62C9EA00CCDA77 /* process managerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B2BC551E62C9EA00CCDA77 /* Build configuration list for PBXNativeTarget "process managerTests" */;
+			buildPhases = (
+				30B2BC451E62C9EA00CCDA77 /* Sources */,
+				30B2BC461E62C9EA00CCDA77 /* Frameworks */,
+				30B2BC471E62C9EA00CCDA77 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30B2BC4B1E62C9EA00CCDA77 /* PBXTargetDependency */,
+			);
+			name = "process managerTests";
+			productName = "process managerTests";
+			productReference = 30B2BC491E62C9EA00CCDA77 /* process managerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30CBDCFD1E650F3300C55118 /* ProcDeleteHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30CBDD041E650F3300C55118 /* Build configuration list for PBXNativeTarget "ProcDeleteHelper" */;
+			buildPhases = (
+				30CBDCFA1E650F3300C55118 /* Sources */,
+				30CBDCFB1E650F3300C55118 /* Frameworks */,
+				30CBDCFC1E650F3300C55118 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ProcDeleteHelper;
+			productName = ProcDeleteHelper;
+			productReference = 30CBDCFE1E650F3300C55118 /* ProcDeleteHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+		30CBDD181E65175300C55118 /* process manager helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30CBDD251E65175400C55118 /* Build configuration list for PBXNativeTarget "process manager helper" */;
+			buildPhases = (
+				30CBDD141E65175300C55118 /* Sources */,
+				30CBDD151E65175300C55118 /* Frameworks */,
+				30CBDD161E65175300C55118 /* Headers */,
+				30CBDD171E65175300C55118 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "process manager helper";
+			productName = "process manager helper";
+			productReference = 30CBDD191E65175300C55118 /* process manager helper.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30B2BC2B1E62C9EA00CCDA77 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "sheen vempeny";
+				TargetAttributes = {
+					30B2BC321E62C9EA00CCDA77 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					30B2BC481E62C9EA00CCDA77 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 30B2BC321E62C9EA00CCDA77;
+					};
+					30CBDCFD1E650F3300C55118 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					30CBDD181E65175300C55118 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 30B2BC2E1E62C9EA00CCDA77 /* Build configuration list for PBXProject "process manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30B2BC2A1E62C9EA00CCDA77;
+			productRefGroup = 30B2BC341E62C9EA00CCDA77 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30B2BC321E62C9EA00CCDA77 /* process manager */,
+				30B2BC481E62C9EA00CCDA77 /* process managerTests */,
+				30CBDCFD1E650F3300C55118 /* ProcDeleteHelper */,
+				30CBDD181E65175300C55118 /* process manager helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B2BC311E62C9EA00CCDA77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD111E6512E800C55118 /* ProcDeleteHelper in Resources */,
+				30B2BC401E62C9EA00CCDA77 /* Assets.xcassets in Resources */,
+				30B2BC431E62C9EA00CCDA77 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B2BC471E62C9EA00CCDA77 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CBDD171E65175300C55118 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD201E65175400C55118 /* process_manager_helper.tiff in Resources */,
+				30CBDD231E65175400C55118 /* process_manager_helper.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30B2BC2F1E62C9EA00CCDA77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B2BC3E1E62C9EA00CCDA77 /* ViewController.m in Sources */,
+				30CBDD0F1E65124E00C55118 /* KillApp.m in Sources */,
+				30B2BC5A1E62CCE000CCDA77 /* ProcessManager.m in Sources */,
+				30B2BC3B1E62C9EA00CCDA77 /* main.m in Sources */,
+				30B2BC691E63C03800CCDA77 /* ProcessListViewController.m in Sources */,
+				30B2BC381E62C9EA00CCDA77 /* AppDelegate.m in Sources */,
+				30B2BC601E63631100CCDA77 /* NSRunningApplication+Adds.m in Sources */,
+				30B2BC631E63A43600CCDA77 /* ProcessInfo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B2BC451E62C9EA00CCDA77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B2BC4E1E62C9EA00CCDA77 /* process_managerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CBDCFA1E650F3300C55118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD011E650F3300C55118 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30CBDD141E65175300C55118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30CBDD1E1E65175400C55118 /* process_manager_helper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30B2BC4B1E62C9EA00CCDA77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30B2BC321E62C9EA00CCDA77 /* process manager */;
+			targetProxy = 30B2BC4A1E62C9EA00CCDA77 /* PBXContainerItemProxy */;
+		};
+		30CBDD131E65138600C55118 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30CBDCFD1E650F3300C55118 /* ProcDeleteHelper */;
+			targetProxy = 30CBDD121E65138600C55118 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30B2BC411E62C9EA00CCDA77 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B2BC421E62C9EA00CCDA77 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30CBDD211E65175400C55118 /* process_manager_helper.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30CBDD221E65175400C55118 /* Base */,
+			);
+			name = process_manager_helper.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30B2BC501E62C9EA00CCDA77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		30B2BC511E62C9EA00CCDA77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		30B2BC531E62C9EA00CCDA77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30B2BC541E62C9EA00CCDA77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process manager/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30B2BC561E62C9EA00CCDA77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process managerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-managerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/process manager.app/Contents/MacOS/process manager";
+			};
+			name = Debug;
+		};
+		30B2BC571E62C9EA00CCDA77 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process managerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-managerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/process manager.app/Contents/MacOS/process manager";
+			};
+			name = Release;
+		};
+		30CBDD021E650F3300C55118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30CBDD031E650F3300C55118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30CBDD261E65175400C55118 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process manager helper/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Debug;
+		};
+		30CBDD271E65175400C55118 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "process manager helper/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sheen.process-manager";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30B2BC2E1E62C9EA00CCDA77 /* Build configuration list for PBXProject "process manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B2BC501E62C9EA00CCDA77 /* Debug */,
+				30B2BC511E62C9EA00CCDA77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B2BC521E62C9EA00CCDA77 /* Build configuration list for PBXNativeTarget "process manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B2BC531E62C9EA00CCDA77 /* Debug */,
+				30B2BC541E62C9EA00CCDA77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B2BC551E62C9EA00CCDA77 /* Build configuration list for PBXNativeTarget "process managerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B2BC561E62C9EA00CCDA77 /* Debug */,
+				30B2BC571E62C9EA00CCDA77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30CBDD041E650F3300C55118 /* Build configuration list for PBXNativeTarget "ProcDeleteHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CBDD021E650F3300C55118 /* Debug */,
+				30CBDD031E650F3300C55118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		30CBDD251E65175400C55118 /* Build configuration list for PBXNativeTarget "process manager helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30CBDD261E65175400C55118 /* Debug */,
+				30CBDD271E65175400C55118 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30B2BC2B1E62C9EA00CCDA77 /* Project object */;
+}
